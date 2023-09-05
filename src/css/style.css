@@ -1,0 +1,320 @@
+ * {
+    padding: 0;
+    margin: 0;
+ }
+
+.Sun {
+    width: 120px;
+    height: 120px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid red;
+}
+
+.Mercury {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    left: 43%;
+    top: 42%;
+    transform: translate(-50%,-50%);
+    animation: orbit 2s linear infinite;
+    background-color: rgb(97, 92, 86);
+}
+
+
+
+
+@keyframes orbit {
+    0% { transform: rotate(0deg) translateX(70px) rotate(0deg);
+    
+    }
+    100% { transform: rotate(360deg) translateX(70px) rotate(-360deg);}
+}
+
+p {
+    color: rgb(0, 0, 0);
+    font-family: system-ui;
+    position:absolute;
+    left: -62px;
+    top: -11px;
+}
+
+.Mercury-outline,.Venus-outline-1,.Earth-outline-1,.Mars-outline-1,.Jupiter-outline-1, .Saturn-outline-1, .Uranus-outline-1, .Neptune-outline-1 {
+    border-radius: 50%;
+    border: 2px dotted rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.Mercury-outline {
+    height: 140px;
+    width: 140px;
+}
+
+.Venus {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    left: 42%;
+    top: 42%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(136, 97, 49);
+    animation: Orbit1 10s linear infinite;
+}
+
+.Venus p {
+    color: rgb(0, 0, 0);
+    font-family: system-ui;
+    position:absolute;
+    left: -52px;
+    top: 0px;
+}
+
+.Venus-outline-1 {
+    width: 200px;
+    height: 200px;
+}
+
+@keyframes Orbit1 {
+    0% { transform: rotate(0deg) translateX(100px) rotate(0deg);
+    
+    }
+    100% { transform: rotate(360deg) translateX(100px) rotate(-360deg);}
+}
+
+.Earth {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    left: 42%;
+    top: 42%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(25, 0, 255);
+    animation: Orbit2 20s linear infinite;
+}
+
+.Earth p {
+    color: rgb(0, 0, 0);
+    font-family: system-ui;
+    position:absolute;
+    left: -52px;
+    top: 10px;
+}
+
+.Earth-outline-1 {
+    width: 300px;
+    height: 300px;
+    
+}
+
+@keyframes Orbit2 {
+    0% { transform: rotate(0deg) translateX(150px) rotate(0deg);
+    
+    }
+    100% { transform: rotate(360deg) translateX(150px) rotate(-360deg);}
+}
+
+.Earth-circle {
+    width: 65px;
+    height: 65px;
+    border: 2px dotted black;
+    position: relative;
+    left: -8px;
+    right: -8px;
+    border-radius: 40px;
+}
+
+.Earth-inner {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 45%;
+    top: 40%;
+    animation: Orbit3 3s linear infinite;
+}
+
+@keyframes Orbit3 {
+    0% { transform: rotate(0deg) translateX(33px) rotate(0deg);
+    
+    }
+    100% { transform: rotate(360deg) translateX(33px) rotate(-360deg);}
+}
+
+.Mars {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    left: 46.5%;
+    top: 46.5%;
+    transform: translate(-50%,-50%);
+    animation: Orbit4 30s linear infinite;
+    background-color: rgb(160, 125, 30);
+}
+
+
+.Mars-outline-1 {
+    width: 400px;
+    height: 400px;
+}
+
+
+@keyframes Orbit4 {
+    0% { transform: rotate(0deg) translateX(200px) rotate(0deg);
+    
+    }
+    100% { transform: rotate(360deg) translateX(200px) rotate(-360deg);}
+}
+
+.Mars p {
+    color: rgb(0, 0, 0);
+    font-family: system-ui;
+    position:absolute;
+    left: -42px;
+    top: 0px;
+}
+
+.Jupiter-outline-1 {
+    width: 550px;
+    height: 550px;
+}
+
+.Jupiter {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+    animation: Orbit5 60s linear infinite;
+    background-color: rgb(160, 125, 30);
+}
+
+.Jupiter p {
+    color: rgb(0, 0, 0);
+    font-family: system-ui;
+    position:absolute;
+    left: -52px;
+    top: 10px;
+}
+
+@keyframes Orbit5 {
+    0% { transform: rotate(0deg) translateX(280px) rotate(0deg);
+    
+    }
+    100% { transform: rotate(360deg) translateX(280px) rotate(-360deg);}
+    
+}
+
+.Saturn-outline-1 {
+    width: 650px;
+    height: 650px;
+}
+
+.Saturn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+    animation: Orbit6 100s linear infinite;
+    background-color: rgb(207, 188, 134);
+}
+
+@keyframes Orbit6 {
+    0% { transform: rotate(0deg) translateX(320px) rotate(0deg);
+    
+    }
+    100% { transform: rotate(360deg) translateX(320px) rotate(-360deg);}
+    
+}
+
+.Saturn p{
+    color: rgb(0, 0, 0);
+    font-family: system-ui;
+    position:absolute;
+    left: -52px;
+    top: 10px;
+}
+
+.Uranus-outline-1 {
+    width: 750px;
+    height: 750px;
+}
+
+.Uranus {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+    animation: Orbit7 160s linear infinite;
+    background-color: rgb(207, 188, 134);
+}
+
+.Uranus p {
+    color: rgb(0, 0, 0);
+    font-family: system-ui;
+    position:absolute;
+    left: -52px;
+    top: 10px;
+}
+
+@keyframes Orbit7 {
+    0% { transform: rotate(0deg) translateX(360px) rotate(0deg);
+    
+    }
+    100% { transform: rotate(360deg) translateX(360px) rotate(-360deg);}
+}
+
+
+.Neptune-outline-1 {
+    width: 850px;
+    height: 850px;
+}
+
+.Neptune {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+    animation: Orbit8 220s linear infinite;
+    background-color: rgb(207, 188, 134);
+}
+
+.Neptune p {
+    color: rgb(0, 0, 0);
+    font-family: system-ui;
+    position:absolute;
+    left: -52px;
+    top: 20px;
+}
+
+@keyframes Orbit8 {
+    0% { transform: rotate(0deg) translateX(420px) rotate(0deg);
+    
+    }
+    100% { transform: rotate(360deg) translateX(420px) rotate(-360deg);}
+}
